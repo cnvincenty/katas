@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
 import org.junit.jupiter.api.Test;
 
-class PezPrueba {
+public class PezPrueba {
 
     @Test
     void pezPuede() {
