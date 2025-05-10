@@ -4,7 +4,7 @@ public class PayPal implements ProcesamientoPagos{
 
     @Override
     public void procesarTarjetaCredito(String numeroTarjeta, double monto) {
-        throw new UnsupportedOperationException("No procesa con Tarjeta de Credito");
+        throw new UnsupportedOperationException("No procesa con Tarjeta de credito");
     }
 
     @Override
