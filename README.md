@@ -39,3 +39,26 @@
 - Implementar las clases TemperatureSensor, PressureSensor y HumiditySensor.
 - Identificar el problema: Cada sensor implementa métodos que no necesita.
 - Refactorizar: Dividir Sensor en interfaces más pequeñas (TemperatureReadable, PressureReadable, HumidityReadable) e implementar solo las relevantes en cada clase.
+
+## Kata 5: Interfaz de Dispositivo IoT
+
+**Objetivo:** Diseñar interfaces para capacidades específicas de dispositivos.
+
+- Crear una interfaz SmartDevice con los métodos turnOn(), turnOff(), connectToWiFi() y playMusic().
+- Implementar las clases SmartLight y SmartSpeaker.
+- Identificar el problema: SmartLight no necesita playMusic().
+- Refactorizar: Crear interfaces más pequeñas (PowerControllable, WiFiConnectable, MusicPlayable) e implementarlas selectivamente.
+
+## Pasos a seguir para la resolución de cada Kata
+
+- Comprender el Problema: - Leer la descripción de la kata. - Identificar la interfaz monolítica o sobrecargada.
+- Implementar el Código: - Crear la interfaz y sus implementaciones como se describe. - Observar las violaciones de ISP (por ejemplo, métodos no utilizados, excepciones).
+- Identificar la Necesidad de ISP: - Analizar por qué el diseño actual es problemático. - Discutir cómo las interfaces más pequeñas y específicas pueden resolver el problema.
+- Refactorizar el Código: - Dividir la interfaz monolítica en interfaces más pequeñas y cohesivas. - Actualizar las implementaciones para usar solo las interfaces relevantes.
+- Probar el Código Refactorizado: - Asegurarse de que el código refactorizado funcione como se espera. - Verificar que ninguna clase dependa de métodos que no utiliza.
+
+## Resultados Esperados
+
+- Comprender la importancia de las interfaces cohesivas.
+- Aprender a identificar y refactorizar violaciones de ISP.
+- Escribir código más limpio y mantenible siguiendo ISP.
