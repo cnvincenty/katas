@@ -49,6 +49,16 @@
 - Identificar el problema: SmartLight no necesita playMusic().
 - Refactorizar: Crear interfaces más pequeñas (PowerControllable, WiFiConnectable, MusicPlayable) e implementarlas selectivamente.
 
+## Kata 6: Sistema de Pago en E-Commerce
+
+**Objetivo:** Evitar que las clases implementen métodos irrelevantes.
+
+- Crear una interfaz PaymentProcessor con los métodos processCreditCard(), processPayPal() y processCrypto().
+- Implementar las clases CreditCardProcessor, PayPalProcessor y CryptoProcessor.
+- Identificar el problema: Cada clase implementa métodos que no utiliza.
+- Refactorizar: Dividir PaymentProcessor en CreditCardPayment, PayPalPayment y CryptoPayment.
+
+
 ## Pasos a seguir para la resolución de cada Kata
 
 - Comprender el Problema: - Leer la descripción de la kata. - Identificar la interfaz monolítica o sobrecargada.
