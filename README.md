@@ -18,6 +18,15 @@
 - Identificar el problema: BasicPrinter se ve obligada a implementar métodos no utilizados.
 - Refactorizar: Dividir LegacyPrinter en Printable, Scannable y Faxable.
 
+## Kata 3: Operaciones No Soportadas
+
+**Objetivo:** Manejar operaciones no soportadas.
+
+- Crear una interfaz Vehicle con los métodos drive(), fly() y sail().
+- Implementar las clases Car, Plane y Boat. Lanzar UnsupportedOperationException para los métodos no soportados.
+- Identificar el problema: Lanzar excepciones viola ISP.
+- Refactorizar: Crear interfaces separadas (Drivable, Flyable, Sailable) e implementarlas adecuadamente.
+
 ## Autor
 
 * **Cesar Nilton Vincenty Funes** - [@cnvincenty](https://github.com/cnvincenty)
